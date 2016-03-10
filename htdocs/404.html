@@ -19,6 +19,10 @@
     margin:0px;
 
   }
+  body
+  {
+    margin: 0;
+  }
   #header{
     background-color: #2c3e50;
     height:7em;
@@ -37,20 +41,50 @@
     position:relative;
     top:-4em;
   }
+  #maincontainer
+  {
+    Width: 1000px;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+a {
+  color: white;
+  text-decoration: none;
+}
+#maincontainer a:hover {
+  color:#FF1919;
+}
+#textheader{
+  border: solid white 1px;
+  padding : 4px;
+  border-radius: 12px;
+}
+#gros h1{
+  font-size: 100px;
+  margin:3vh;
+}
+#footer{
+  background-color: #2c3e50;
+  height: 7em;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
 </style>
 </head>
 
 <body>
-<div id="header"><img src="img/profile.png"> <span> Oops cette page n'existe pas </span>
+<div id="header"><a href="index.html"><img src="img/profile.png"> <span id="textheader"> Oops cette page n'existe pas</span></a>
   
 </div>
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
-    </div>
-    <p>If you are the application owner check the logs for more information.</p>
-  </div>
+<div id="maincontainer">
+<img src="img/profile.png">
+<a href="index.html"><div id="gros"><h1>404</h1></div>
+<h1>Cette page n'existe pas ! <br/>Cliquez ici pour revenir à la page d'accueil</a></h1>
+</div>
+<div id="footer"></div>
 </body>
 </html>
